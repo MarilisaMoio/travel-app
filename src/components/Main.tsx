@@ -1,7 +1,13 @@
-const Main = () => {
+import React from "react"
+
+interface Props {
+    children: React.ReactNode
+}
+
+const Main = (props: Props) => {
     return (
-        <div className="p-2 bg-sky-400">
-            Ciao
+        <div>
+            {props.children}
         </div>
     )
 }
