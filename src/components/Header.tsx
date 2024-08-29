@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import DropDown from "./DropDown"
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Header = () => {
     const [visibility, setVisibility] = useState<boolean>(false)
@@ -16,7 +17,8 @@ const Header = () => {
                 <h1 className="ml-2 text-xs font-semibold">Mission <br /> Impossible</h1>
             </NavLink>
             <button onClick={() => setVisibility(visibility => !visibility)}>
-                sono la tendina
+                { !visibility && <IoIosArrowDown />}
+                { visibility && <IoIosArrowUp />}
             </button>
             {visibility && <DropDown handleVisibility={handleVisibility} />}
         </div>

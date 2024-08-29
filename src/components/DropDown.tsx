@@ -13,8 +13,8 @@ const DropDown = (props: Props) => {
     }
     
     return (
-        <div className="absolute bottom-0 bg-stone-50 w-full sm:w-40 p-4 translate-y-full right-0 z-20">
-            <button onClick={closeAndNavigate}>Ciaoooo</button>
+        <div className="absolute bottom-0 bg-stone-50 w-full md:w-64 p-4 translate-y-full right-0 z-20">
+            <button onClick={closeAndNavigate}>Crea nuovo itinerario</button>
         </div>
     )
 }
